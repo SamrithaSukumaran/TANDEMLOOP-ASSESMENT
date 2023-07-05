@@ -1,0 +1,15 @@
+Program2:
+
+public class NumberSeries {
+    public static void main(String[] args) {
+        int x = 10; 
+        for (int i = 1; i <= x; i++) {
+            int number = 2 * i - 1;
+            System.out.print(number);
+
+            if (i < x) {
+                System.out.print(", ");
+            }
+        }
+    }
+}

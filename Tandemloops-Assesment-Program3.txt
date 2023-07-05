@@ -1,0 +1,24 @@
+Program3:
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NumberSeriesGenerator {
+    public static List<Integer> generateNumberSeries(int a) {
+        List<Integer> series = new ArrayList<>();
+
+        for (int i = 1; i <= a; i++) {
+            if (i % 2 != 0) {
+                series.add(i);
+            }
+        }
+
+        return series;
+    }
+
+    public static void main(String[] args) {
+        int a = 6;
+        List<Integer> series = generateNumberSeries(a);
+        System.out.println(series);
+    }
+}
